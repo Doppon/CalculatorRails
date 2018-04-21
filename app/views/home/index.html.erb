@@ -1,7 +1,7 @@
-<h2>予定時間と実務時間を計算します！</h2>
-
-<%= form_for(@daily, url:{controller: :home, action: :index}) do |f| %>
-  <div><%= f.text_area :content %></div>
-  <div><%= f.submit '計算' %></div>
-<% end %>
-
+<div class="main_content">
+  <h2>予定時間と実務時間を計算します！</h2>
+  <%= form_for(@daily, url:{controller: :home, action: :index}) do |f| %>
+    <div class="content_form"><%= f.text_area :content, cols: :"90" , rows: :"30" %></div>
+    <div class="submit"><%= f.submit '計算' %></div>
+  <% end %>
+</div>
